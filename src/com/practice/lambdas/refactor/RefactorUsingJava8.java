@@ -55,7 +55,7 @@ public class RefactorUsingJava8 {
      * @return Set<String> containing the track names whose length is less than 60
      */
     private static Set<String> getTracksLengthLessThanSixtyLambda(List<Albums> listAlbums) {
-        Set<String> trackNames = new HashSet<>();
+        Set<String> trackNames = new HashSet<>(); //for collecting elements
         listAlbums.stream().forEach(albums -> albums.getTracks()
                 .stream().
                         filter(track->track.getLength()<60).
